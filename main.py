@@ -2,7 +2,7 @@
 import getDataset
 from torch.utils.data import Dataset
 import torch
-from BANN import BANNModel
+from model import BANNModel
 import torch.optim as optim
 import numpy as np
 from torch.optim import lr_scheduler
