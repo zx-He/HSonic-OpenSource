@@ -1,22 +1,22 @@
 # HSonic_OpenSource
 
-the dataset and source code of paper "HeadSonic: Reliable Bone Conduction Earphone Authentication with Head-conducted Sounds"
+the dataset and source code of paper "HeadSonic: Usable Bone Conduction Earphone Authentication via Head-conducted Sounds"
 
 
 
 Dataset：
 
-​    Data from 45 subjects, each subject is required to collect one session data (100 samples) at each of the four different behaviors, i.e., sitting on a chair (chair.pth), rotating the head (head.pth), rotating the body (body.pth), and walking (walk.pth).
+​	    Download from：https://www.kaggle.com/datasets/miracle0723/hsonic-re-dataset
 
-​	Each sample has a length of 3072 (output of the SCAE model).
+​	    Reconstructed features from 60 subjects(subject ID = folder name), each subject contributes 100 samples under each of four behaviors (sitting on a chair, rotating the head, rotating the body, and walking). 
 
 ​	
 
 Source code: 
 
-​	Run "BANN_transfer.py" to for the BANN model transfer learning. 
+​	Run "Bi_SVM.py"  to get the classification performance of each subject.
 
-​	"BANN_transfer.py" automatically calls code from other files, sequentially designating each subject as a legitimate user for evaluation.
+​	"BANN.py" explains the training method for the BANN model.
 
-  More details could be seen within the source code.
+​    More details could be seen within the source code.
 
